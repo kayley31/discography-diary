@@ -1,0 +1,202 @@
+.create-playlists-page {
+  padding-bottom: 40px;
+}
+
+.create-playlists-page .page-header {
+  margin-bottom: 40px;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #FEFFEA 0%, #FCFC62 100%);
+  border-radius: 10px;
+}
+
+.create-playlists-page .page-header h1 {
+  font-size: 42px;
+  color: #424242;
+  margin-bottom: 10px;
+}
+
+.create-playlists-page .page-header p {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+.saved-indicator {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* Create playlist component wrapper */
+.create-playlist {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Instructions section */
+.instructions {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.instructions h3 {
+  color: #424242;
+  margin-bottom: 15px;
+}
+
+.instructions p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.button-container .centerBtn {
+  min-width: 250px;
+}
+
+.button-container .secondary {
+  background-color: #A3A3A3;
+  color: white;
+}
+
+.button-container .secondary:hover {
+  background-color: #424242;
+}
+
+/* Recommendations section */
+.recommendations-section {
+  margin-top: 50px;
+}
+
+.recommendations-section > h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #424242;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #FCFC62;
+}
+
+/* Create section (name input + button) */
+.create-section {
+  max-width: 600px;
+  margin: 40px auto 0;
+  text-align: center;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.create-section input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.create-section .centerBtn {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Success message */
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin: 20px 0;
+  text-align: center;
+  border-left: 4px solid #2e7d32;
+  font-weight: 600;
+}
+
+/* Progress indicator */
+.progress-indicator {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.progress-indicator .step {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #e0e0e0;
+  color: #666;
+  border-radius: 50%;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.progress-indicator .step.active {
+  background-color: #FCFC62;
+  color: #424242;
+}
+
+.progress-indicator .step.completed {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .create-playlists-page .page-header {
+    padding: 25px 15px;
+  }
+
+  .create-playlists-page .page-header h1 {
+    font-size: 32px;
+  }
+
+  .create-playlists-page .page-header p {
+    font-size: 16px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-container .centerBtn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .recommendations-section > h2 {
+    font-size: 26px;
+  }
+
+  .create-section {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-playlists-page .page-header h1 {
+    font-size: 28px;
+  }
+
+  .instructions {
+    padding: 20px 15px;
+  }
+
+  .progress-indicator .step {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}

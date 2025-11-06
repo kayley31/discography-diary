@@ -1,0 +1,405 @@
+.find-playlists-page {
+  padding-bottom: 40px;
+}
+
+.find-playlists-page .page-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Discover Content Cards */
+.discover-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.info-card {
+  background-color: #f9f9f9;
+  padding: 40px 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-color: #FCFC62;
+}
+
+.info-card h2 {
+  font-size: 28px;
+  color: #424242;
+  margin-bottom: 20px;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #FCFC62;
+  color: #424242;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.cta-button:hover {
+  background-color: #C9C9C9;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* Tips Section */
+.tips-section {
+  background: linear-gradient(135deg, #FEFFEA 0%, #FCFC62 100%);
+  padding: 50px 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.tips-section h2 {
+  font-size: 32px;
+  color: #424242;
+  margin-bottom: 40px;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tip-card {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-3px);
+}
+
+.tip-card h3 {
+  font-size: 22px;
+  color: #424242;
+  margin-bottom: 15px;
+}
+
+.tip-card p {
+  font-size: 15px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .discover-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .info-card {
+    padding: 30px 20px;
+  }
+
+  .info-card h2 {
+    font-size: 24px;
+  }
+
+  .tips-section {
+    padding: 40px 20px;
+  }
+
+  .tips-section h2 {
+    font-size: 26px;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .tip-card {
+    padding: 25px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .find-playlists-page {
+    padding-bottom: 30px;
+  }
+
+  .info-card {
+    padding: 25px 15px;
+  }
+
+  .info-card h2 {
+    font-size: 22px;
+  }
+
+  .info-card p {
+    font-size: 15px;
+  }
+
+  .cta-button {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+
+  .tips-section {
+    padding: 30px 15px;
+  }
+
+  .tip-card h3 {
+    font-size: 20px;
+  }
+}
+
+/* Carousel container */
+.carousel-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Playlist sections */
+.playlist-section {
+  margin-bottom: 60px;
+}
+
+.playlist-section h2 {
+  font-size: 28px;
+  color: #424242;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #FCFC62;
+}
+
+/* Carousel slide */
+.carousel-slide {
+  padding: 10px;
+}
+
+.carousel-group {
+  display: flex;
+  justify-content: center;
+}
+
+/* Playlist item in carousel */
+.carousel-container .playlist-item {
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 0;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-container .playlist-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container .playlist-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Slick carousel overrides */
+.carousel__wrapper {
+  margin: 0 -10px;
+}
+
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+.slick-next {
+  right: -25px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 50px;
+  color: #424242;
+  opacity: 1;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: #FCFC62;
+}
+
+.slick-disabled:before {
+  opacity: 0.3;
+}
+
+/* Dots styling */
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #A3A3A3;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #FCFC62;
+  opacity: 1;
+}
+
+/* Loading and error states */
+.loading-container {
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 20px;
+  color: #666;
+}
+
+.error-container {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #ffebee;
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+.error-container p {
+  font-size: 18px;
+  color: #c62828;
+  margin-bottom: 20px;
+}
+
+.error-container button {
+  background-color: #c62828;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.error-container button:hover {
+  background-color: #b71c1c;
+}
+
+/* Empty state */
+.no-playlists-message {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  font-size: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .slick-prev {
+    left: -15px;
+  }
+
+  .slick-next {
+    right: -15px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .playlist-section {
+    margin-bottom: 50px;
+  }
+
+  .playlist-section h2 {
+    font-size: 24px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slick-prev {
+    left: -10px;
+  }
+
+  .slick-next {
+    right: -10px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 35px;
+  }
+
+  .carousel-slide {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .find-playlists-page {
+    padding-bottom: 30px;
+  }
+
+  .playlist-section {
+    margin-bottom: 40px;
+  }
+
+  .playlist-section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+  }
+
+  .loading-container,
+  .error-container,
+  .no-playlists-message {
+    padding: 60px 15px;
+    font-size: 16px;
+  }
+}
