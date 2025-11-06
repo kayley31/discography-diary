@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../images/nav_logo.png'
+import logo from '../images/Nav_logo.png'
 
 function Header() {
   const location = useLocation();
