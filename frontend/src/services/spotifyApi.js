@@ -3,11 +3,10 @@
  * Centralized API calls with error handling
  */
 
-// In development, proxy handles the routing to backend
-// In production, use the environment variable
+// Use environment variable in production, proxy in development
 const API_BASE_URL = import.meta.env.PROD 
-  ? (import.meta.env.VITE_API_URL || 'http://localhost:3001')
-  : ''; // Empty string uses proxy in development
+  ? (import.meta.env.VITE_API_URL || '')
+  : ''; // Empty string uses Vite proxy in development
 
 /**
  * Generic fetch wrapper with error handling
